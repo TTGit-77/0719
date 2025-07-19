@@ -27,12 +27,25 @@ export default function AuthPage({ onLoginSuccess, onSignupSuccess }) {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center">
+    <div className="auth-container">
       <div className="bg-white/80 backdrop-blur-lg rounded-3xl shadow-2xl p-8 w-full max-w-md">
-        <h2 className="text-2xl font-bold mb-6 text-center">
-          {isLogin ? "Login" : "Sign Up"}
-        </h2>
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <div className="form-toggle">
+          <button
+            className={isLogin ? "active-tab" : "inactive-tab"}
+            type="button"
+            onClick={() => setIsLogin(true)}
+          >
+            Login
+          </button>
+          <button
+            className={!isLogin ? "active-tab" : "inactive-tab"}
+            type="button"
+            onClick={() => setIsLogin(false)}
+          >
+            Sign Up
+          </button>
+        </div>
+        <form onSubmit={handleSubmit} className="auth-form">
           {!isLogin && (
             <input
               type="text"
@@ -41,7 +54,7 @@ export default function AuthPage({ onLoginSuccess, onSignupSuccess }) {
               onChange={(e) =>
                 setFormData({ ...formData, name: e.target.value })
               }
-              className="w-full p-3 rounded-xl border focus:ring-2 focus:ring-purple-400"
+              className="input-field"
               required
             />
           )}
@@ -52,7 +65,7 @@ export default function AuthPage({ onLoginSuccess, onSignupSuccess }) {
             onChange={(e) =>
               setFormData({ ...formData, email: e.target.value })
             }
-            className="w-full p-3 rounded-xl border focus:ring-2 focus:ring-purple-400"
+            className="input-field"
             required
           />
           <input
@@ -62,26 +75,29 @@ export default function AuthPage({ onLoginSuccess, onSignupSuccess }) {
             onChange={(e) =>
               setFormData({ ...formData, password: e.target.value })
             }
-            className="w-full p-3 rounded-xl border focus:ring-2 focus:ring-purple-400"
+            className="input-field"
             required
           />
           <button
             type="submit"
-            className="w-full py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-xl hover:scale-105 transition-all duration-200"
+            className="submit-btn"
           >
             {isLogin ? "Login" : "Sign Up"}
           </button>
         </form>
-        <p className="mt-4 text-center text-gray-600">
+        <p className="toggle-msg">
           {isLogin
             ? "Don't have an account? "
             : "Already have an account? "}
-          <button
+          <span
+            className="toggle-link"
             onClick={() => setIsLogin(!isLogin)}
-            className="text-purple-600 hover:underline"
+            role="button"
+            tabIndex={0}
+            style={{ cursor: "pointer" }}
           >
             {isLogin ? "Sign Up" : "Login"}
-          </button>
+          </span>
         </p>
       </div>
     </div>

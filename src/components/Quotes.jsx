@@ -4,7 +4,7 @@ import quotesData from "../data/quotes.json";
 import QuoteCard from "./QuoteCard";
 import "./Quotes.css";
 
-const Quotes = () => {
+const Quotes = ({ user, onLogout }) => {
   const [likedQuotes, setLikedQuotes] = useState(() =>
     JSON.parse(localStorage.getItem("likedQuotes") || "[]")
   );
@@ -19,7 +19,14 @@ const Quotes = () => {
 
   return (
     <div className="quotes-container">
-      <h2>Your Daily Motivation</h2>
+      <div className="header-bar">
+        <h2>Your Daily Motivation</h2>
+        {onLogout && (
+          <button className="logout-button" onClick={onLogout}>
+            Logout
+          </button>
+        )}
+      </div>
       {quotesData.map((quote) => (
         <QuoteCard
           key={quote.id}
