@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import AuthPage from "./components/AuthPage";
 import Quotes from "./components/Quotes";
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://quote-backend-zy4v.onrender.com/api';
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
