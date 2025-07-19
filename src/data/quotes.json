@@ -1,0 +1,23 @@
+[
+  { "id": 1, "text": "Believe in yourself.", "author": "Unknown" },
+  { "id": 2, "text": "Every moment is a fresh beginning.", "author": "T.S. Eliot" },
+  { "id": 3, "text": "Turn your wounds into wisdom.", "author": "Oprah Winfrey" },
+  { "id": 4, "text": "Success is not final, failure is not fatal.", "author": "Winston Churchill" },
+  { "id": 5, "text": "Imagination is more important than knowledge.", "author": "Albert Einstein" },
+  { "id": 6, "text": "The wound is the place where the Light enters you.", "author": "Rumi" },
+  { "id": 7, "text": "Keep your face to the sunshine and you cannot see a shadow.", "author": "Helen Keller" },
+  { "id": 8, "text": "The only way to do great work is to love what you do.", "author": "Steve Jobs" },
+  { "id": 9, "text": "If you’re always trying to be normal you will never know how amazing you can be.", "author": "Maya Angelou" },
+  { "id": 10, "text": "Be water, my friend.", "author": "Bruce Lee" },
+  { "id": 11, "text": "It does not matter how slowly you go as long as you do not stop.", "author": "Confucius" },
+  { "id": 12, "text": "The journey of a thousand miles begins with one step.", "author": "Lao Tzu" },
+  { "id": 13, "text": "The future belongs to those who believe in the beauty of their dreams.", "author": "Eleanor Roosevelt" },
+  { "id": 14, "text": "The secret of getting ahead is getting started.", "author": "Mark Twain" },
+  { "id": 15, "text": "Pleasure in the job puts perfection in the work.", "author": "Aristotle" },
+  { "id": 16, "text": "What you think, you become. What you feel, you attract. What you imagine, you create.", "author": "Buddha" },
+  { "id": 17, "text": "Don’t cry because it’s over. Smile because it happened.", "author": "Dr. Seuss" },
+  { "id": 18, "text": "What would life be if we had no courage to attempt anything?", "author": "Vincent Van Gogh" },
+  { "id": 19, "text": "Well done is better than well said.", "author": "Benjamin Franklin" },
+  { "id": 20, "text": "Whatever you are, be a good one.", "author": "Abraham Lincoln" }
+]
+

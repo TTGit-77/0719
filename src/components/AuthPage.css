@@ -1,0 +1,70 @@
+
+.auth-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.form-toggle {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1.5rem;
+}
+
+.active-tab,
+.inactive-tab {
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.active-tab {
+  color: #fff;
+  border-bottom: 2px solid #ff9ae6;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 320px;
+}
+
+.input-field {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 14px;
+}
+
+.submit-btn {
+  padding: 12px;
+  background: #ff6ec4;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.toggle-msg {
+  font-size: 0.85rem;
+  color: #ddd;
+  text-align: center;
+}
+
+.toggle-link {
+  margin-left: 5px;
+  color: #ff9ae6;
+  cursor: pointer;
+  text-decoration: underline;
+}
+

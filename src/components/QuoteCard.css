@@ -1,0 +1,32 @@
+
+.quote-card {
+  background: #fff;
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.quote-text {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.quote-author {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.like-button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 1rem;
+}
